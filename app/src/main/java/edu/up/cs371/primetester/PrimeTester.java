@@ -22,15 +22,14 @@ public class PrimeTester {
         {
             temp=n%i;
 
-            if (n<2)
+            if (temp==0)
             {
                 isPrime = false;
             }
-            else if (temp==0)
-            {
-                isPrime = false;
-            }
-
+        }
+        if(n<2)
+        {
+            isPrime = false;
         }
        return isPrime;
     }
