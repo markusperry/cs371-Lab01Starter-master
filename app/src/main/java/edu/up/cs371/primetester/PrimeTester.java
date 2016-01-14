@@ -18,14 +18,19 @@ public class PrimeTester {
         // for now, return a random result
         long temp;
         boolean isPrime = true;
-        for (int i=2; i<=n/2;i++)
+        for (int i=2; i*i<=n;i++)
         {
             temp=n%i;
 
-            if (temp==0)
+            if (n<2)
             {
                 isPrime = false;
             }
+            else if (temp==0)
+            {
+                isPrime = false;
+            }
+
         }
        return isPrime;
     }
